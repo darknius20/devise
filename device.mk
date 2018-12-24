@@ -112,6 +112,14 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/hotword/com.android.hotwordenrollment.common.util.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/com.android.hotwordenrollment.common.util.jar
 
 # Init
+# IFAA manager
+PRODUCT_PACKAGES += \
+    org.ifaa.android.manager
+
+PRODUCT_BOOT_JARS += \
+    org.ifaa.android.manager
+
+# IPACM
 PRODUCT_PACKAGES += \
     init.juice.rc \
     init.mi_thermald.rc
