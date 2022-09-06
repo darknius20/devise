@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021 The AicpOS Project
+# Copyright (C) 2021 The omniOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
