@@ -1,0 +1,8 @@
+[
+  {
+     "remote": "omnirom",
+     "repository": "android_vendor_codeaurora_telephony",
+     "target_path": "vendor/codeaurora/telephony",
+     "revision": "android-12.0"
+   }
+]
