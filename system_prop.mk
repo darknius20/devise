@@ -63,3 +63,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.device_config.runtime_native.usap_pool_enabled=true
 
+# Spark-OS
+ro.spark.device.name=Poco M3
+ro.spark.group.url=https://t.me/cemnel
+ro.spark.maintainer=Darnius
+ro.spark.maintainer.username=daknius
