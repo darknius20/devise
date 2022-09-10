@@ -7,7 +7,7 @@
 $(call inherit-product, device/xiaomi/juice/device.mk)
 
 # Inherit some common Spark stuff.
-WITH_GAPPS := true
+WITH_GAPPS := false
 $(call inherit-product, vendor/spark/config/common_full_phone.mk)
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_GAPPS_ARCH := arm64
@@ -17,7 +17,7 @@ SPARK_BUILD_TYPE := OFFICIAL
 
 #Maintainer
 PRODUCT_PRODUCT_PROPERTIES += \
-   ro.spark.maintainer=JoemarTaroy \
+   ro.spark.maintainer=Darknius \
 
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
