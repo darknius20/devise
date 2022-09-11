@@ -9,6 +9,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Graphics
 PRODUCT_PRODUCT_PROPERTIES += \
     debug.hwui.renderer=skiagl \
+    debug.renderengine.backend=skiaglthreaded \
+    renderthread.skia.reduceopstasksplitting=true \
+    debug.sf.enable_hwc_vds=0 \
     debug.sf.hw=1 \
     debug.sf.latch_unsignaled=1 \
     ro.surface_flinger.running_without_sync_framework=true \
