@@ -162,13 +162,5 @@ PRODUCT_PACKAGES += \
     TelephonyResCommon \
     WifiResCommon
 
-# Input
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/permissions/com.google.android.dialer.support.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.google.android.dialer.support.xml \
-    $(LOCAL_PATH)/permissions/com.google.android.dialer.support.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/com.google.android.dialer.support.jar
-
-PRODUCT_PACKAGES += \
-    GoogleDialer
-
 -include $(LOCAL_PATH)/product_prop.mk
 -include $(LOCAL_PATH)/system_prop.mk
