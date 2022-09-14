@@ -86,6 +86,14 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/permissions/privapp-permissions-gms.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp.permissions-gms.xml
 
+# omniswitch
+PRODUCT_PACKAGES += \
+    OmniSwitch
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/permissions/privapp_whitelist_org.omnirom.omniswitch.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp_whitelist_org.omnirom.omniswitch.xml \
+    $(LOCAL_PATH)/permissions/privapp_whitelist_org.omnirom.omniswitch.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp_whitelist_org.omnirom.omniswitch.xml
+
 # GNSS
 PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1 \
