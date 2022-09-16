@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021 The evolutionOS Project
+# Copyright (C) 2021 The flamingoOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -7,8 +7,8 @@
 # Inherit device configurations
 $(call inherit-product, device/xiaomi/juice/device.mk)
 
-# Inherit some common Project Arcana stuff.
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+# Inherit from the AOSPA configuration.
+$(call inherit-product, vendor/flamingo/target/product/flamingo.mk)
 TARGET_INCLUDE_PIXEL_CHARGER  := true
 
 # Gapps
@@ -37,14 +37,10 @@ TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := evolution_juice
+PRODUCT_NAME := flamingo_juice
 PRODUCT_DEVICE := juice
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := sm6115
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-
-# Maintainer name overlay
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-evolution
