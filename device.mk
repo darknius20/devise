@@ -93,11 +93,7 @@ PRODUCT_PACKAGES += \
 
 # GoogleRecorder
 PRODUCT_PACKAGES += \
-    GoogleRecorder 
-
-# Google Photos
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/pixel_2016_exclusive.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/pixel_2016_exclusive.xml
+    GoogleRecorder
 
 # Health
 PRODUCT_PACKAGES += \
