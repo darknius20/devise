@@ -47,9 +47,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.audiohalext-utils
 
 PRODUCT_PACKAGES += \
-    audio.a2dp.default
-
-PRODUCT_PACKAGES += \
     tinymix \
     libaudio-resampler
 
