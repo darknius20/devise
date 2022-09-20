@@ -47,3 +47,8 @@ PRODUCT_MODEL := sm6115
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+#Pixel Launcher MOD
+$(call inherit-product, vendor/PixelLauncher/PixelLauncher.mk)
+PIXEL_LAUNCHER_VARIANT := ammit
+ICONS_VARIANT := teamfilesicons
