@@ -238,3 +238,7 @@ PRODUCT_COPY_FILES += \
 # Vulkan
 PRODUCT_PACKAGES += \
     libvulkan
+
+# xd OVERLAYs
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-xd
