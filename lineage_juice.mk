@@ -41,3 +41,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 # Gapps
 TARGET_GAPPS_ARCH := arm64
 WITH_GMS := true
+
+# Gcamgo
+PRODUCT_PACKAGES += \
+    GCamGOPrebuilt-V3
