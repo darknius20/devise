@@ -1,13 +1,13 @@
 #
-# Copyright (C) 2021 The fluidOS Project
+# Copyright (C) 2021 The sparkOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/fluid_juice.mk
+    $(LOCAL_DIR)/spark_juice.mk
 
 COMMON_LUNCH_CHOICES := \
-    fluid_juice-user \
-    fluid_juice-userdebug \
-    fluid_juice-eng
+    spark_juice-user \
+    spark_juice-userdebug \
+    spark_juice-eng
