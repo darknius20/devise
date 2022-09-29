@@ -1,13 +1,13 @@
 #
-# Copyright (C) 2021 The LineageOS Project
+# Copyright (C) 2021 The awakenOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_juice.mk
+    $(LOCAL_DIR)/awaken_juice.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_juice-user \
-    lineage_juice-userdebug \
-    lineage_juice-eng
+    awaken_juice-user \
+    awaken_juice-userdebug \
+    awaken_juice-eng

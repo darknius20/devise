@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021 The LineageOS Project
+# Copyright (C) 2021 The awakenOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -8,15 +8,12 @@
 $(call inherit-product, device/xiaomi/juice/device.mk)
 
 # Inherit some common Project Arcana stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/awaken/config/common_full_phone.mk)
 TARGET_INCLUDE_PIXEL_CHARGER  := true
 
 # Gapps
 TARGET_GAPPS_ARCH := arm64
-WITH_GMS := true
-
-# Rice flags
-RICE_MAINTAINER := Darknius
+USE_GAPPS := true
 
 # Quick tap feature
 TARGET_SUPPORTS_QUICK_TAP := true
@@ -40,7 +37,7 @@ TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_juice
+PRODUCT_NAME := awaken_juice
 PRODUCT_DEVICE := juice
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := sm6115
