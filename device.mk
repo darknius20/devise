@@ -21,7 +21,7 @@ PRODUCT_COMPRESSED_APEX := false
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
 # Inherit from vendor if exists
-$(call inherit-product-if-exists, vendor/xiaomi/juice/juice-vendor.mk)
+$(call inherit-product, vendor/xiaomi/juice/juice-vendor.mk)
 
 BOARD_BUILD_PRODUCT_IMAGE := true
 PRODUCT_BUILD_SUPER_PARTITION := false
