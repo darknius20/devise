@@ -179,10 +179,6 @@ PRODUCT_PACKAGES += \
    TetheringConfigOverlayJuice \
    WifiOverlayJuice
 
-# Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-kscope
-
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service.qti \
