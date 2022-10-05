@@ -21,7 +21,7 @@ PRODUCT_COMPRESSED_APEX := false
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
 # Inherit from vendor if exists
-$(call inherit-product-if-exists, vendor/xiaomi/juice/juice-vendor.mk)
+$(call inherit-product, vendor/xiaomi/juice/juice-vendor.mk)
 
 BOARD_BUILD_PRODUCT_IMAGE := true
 PRODUCT_BUILD_SUPER_PARTITION := false
@@ -178,6 +178,10 @@ PRODUCT_PACKAGES += \
    TelephonyOverlayJuice \
    TetheringConfigOverlayJuice \
    WifiOverlayJuice
+
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-kscope
 
 # Power
 PRODUCT_PACKAGES += \

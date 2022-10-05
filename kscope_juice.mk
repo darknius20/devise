@@ -7,25 +7,24 @@
 # Inherit device configurations
 $(call inherit-product, device/xiaomi/juice/device.mk)
 
-# Inherit some common Project Arcana stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common KaleidoskopOS stuff.
+$(call inherit-product, vendor/kscope/target/product/mobile.mk)
 TARGET_INCLUDE_PIXEL_CHARGER  := true
+
+# Resolution of Bootanimation
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Gapps
 TARGET_GAPPS_ARCH := arm64
 WITH_GMS := true
-
-# Rice flags
-RICE_MAINTAINER := Darknius
+WITH_GAPPS := true
+USE_GAPPS := true
 
 # Quick tap feature
 TARGET_SUPPORTS_QUICK_TAP := true
 
 # Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
-
-# Bloom and Living Universe Pixel Wallpapers
-TARGET_INCLUDE_LIVE_WALLPAPERS := true
 
 # Pixel Now playing feature
 TARGET_SUPPORTS_NOW_PLAYING := true
@@ -40,7 +39,7 @@ TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_juice
+PRODUCT_NAME := kscope_juice
 PRODUCT_DEVICE := juice
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := sm6115
