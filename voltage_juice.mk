@@ -7,18 +7,12 @@
 # Inherit device configurations
 $(call inherit-product, device/xiaomi/juice/device.mk)
 
-# Inherit some common KaleidoskopOS stuff.
-$(call inherit-product, vendor/kscope/target/product/mobile.mk)
+# Inherit some common voltageOS stuff.
+$(call inherit-product, vendor/voltage/config/common_full_phone.mk)
 TARGET_INCLUDE_PIXEL_CHARGER  := true
 
 # Resolution of Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
-
-# Gapps
-TARGET_GAPPS_ARCH := arm64
-WITH_GMS := true
-WITH_GAPPS := true
-USE_GAPPS := true
 
 # Quick tap feature
 TARGET_SUPPORTS_QUICK_TAP := true
@@ -39,7 +33,7 @@ TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := kscope_juice
+PRODUCT_NAME := voltage_juice
 PRODUCT_DEVICE := juice
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := sm6115

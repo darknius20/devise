@@ -1,13 +1,13 @@
 #
-# Copyright (C) 2021 The kscopeOS Project
+# Copyright (C) 2021 The voltageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/kscope_juice.mk
+    $(LOCAL_DIR)/voltage_juice.mk
 
 COMMON_LUNCH_CHOICES := \
-    kscope_juice-user \
-    kscope_juice-userdebug \
-    kscope_juice-eng
+    voltage_juice-user \
+    voltage_juice-userdebug \
+    voltage_juice-eng
