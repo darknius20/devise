@@ -1,13 +1,13 @@
 #
-# Copyright (C) 2021 The voltageOS Project
+# Copyright (C) 2021 The nadOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/voltage_juice.mk
+    $(LOCAL_DIR)/nad_juice.mk
 
 COMMON_LUNCH_CHOICES := \
-    voltage_juice-user \
-    voltage_juice-userdebug \
-    voltage_juice-eng
+    nad_juice-user \
+    nad_juice-userdebug \
+    nad_juice-eng
