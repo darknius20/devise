@@ -177,6 +177,9 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TARGET_USERIMAGES_USE_F2FS := true
 
+# RIL
+TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
+
 # Sepolicy
 SELINUX_IGNORE_NEVERALLOWS=true
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
@@ -208,4 +211,4 @@ BOARD_AVB_RECOVERY_ROLLBACK_INDEX := 1
 BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 1
 
 # Inherit from the proprietary version
--include vendor/xiaomi/juice/BoardConfigVendor.mk
+-include vendor/xiaomi/citrus/BoardConfigVendor.mk
