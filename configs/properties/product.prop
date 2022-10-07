@@ -18,9 +18,7 @@ persist.sys.fuse.passthrough.enable=true
 persist.sys.fuse.bpf.enable=false
 
 # Graphics
-debug.hwui.renderer=skiagl
-debug.renderengine.backend=skiaglthreaded
-renderthread.skia.reduceopstasksplitting=true
+debug.hwui.renderer=opengl
 debug.cpurend.vsync=false
 debug.sf.enable_hwc_vds=0
 debug.sf.hw=1
@@ -40,6 +38,10 @@ ro.surface_flinger.use_context_priority=true
 ro.surface_flinger.has_wide_color_display=false
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
+ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
+ro.surface_flinger.has_HDR_display=true
+ro.surface_flinger.set_touch_timer_ms=200
+ro.surface_flinger.wcg_composition_dataspace=143261696
 
 # SF Offset
 debug.sf.late.sf.duration=10500000
