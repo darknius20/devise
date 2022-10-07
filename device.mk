@@ -107,10 +107,7 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-nad
-
-PRODUCT_PACKAGES += \
-    FrameworksResTarget
+    $(LOCAL_PATH)/overlay-rr
 
 # Power
 PRODUCT_PACKAGES += \

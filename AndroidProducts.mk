@@ -1,13 +1,13 @@
 #
-# Copyright (C) 2021 The nadOS Project
+# Copyright (C) 2021 The rrOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/nad_juice.mk
+    $(LOCAL_DIR)/rr_juice.mk
 
 COMMON_LUNCH_CHOICES := \
-    nad_juice-user \
-    nad_juice-userdebug \
-    nad_juice-eng
+    rr_juice-user \
+    rr_juice-userdebug \
+    rr_juice-eng
