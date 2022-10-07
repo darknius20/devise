@@ -109,8 +109,21 @@ PRODUCT_COPY_FILES += \
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-nad
 
+# Overlays
 PRODUCT_PACKAGES += \
-    FrameworksResTarget
+   CarrierConfigOverlay \
+   CellBroadcastReceiverOverlay \
+   DialerOverlay \
+   FrameworksResOverlay \
+   NotchBarKillerOverlay \
+   SettingsOverlay \
+   SettingsProviderOverlay \
+   SystemUIOverlay \
+   TelecommOverlay \
+   TelephonyOverlay \
+   TetheringConfigOverlay \
+   WifiOverlay
+
 
 # Power
 PRODUCT_PACKAGES += \
